@@ -12,7 +12,7 @@ if ($this->session->userdata("admin_level") == "admin") {
 <head>
     <meta charset="utf-8" />
     <title>>_ <?php echo $subtitle." - ".$title." | ".$fr." ".$us->nama_lengkap ?></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0;">
     <meta content="Onhacker CMS" name="description" />
     <meta content="Onhacker" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
