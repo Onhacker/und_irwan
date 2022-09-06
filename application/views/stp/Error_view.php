@@ -51,7 +51,7 @@
 
                                 <div class="text-center">
                                     <h3 class="mt-4">Page not found </h3>
-                                    <p class="text-muted mb-0"><?php echo $title; ?></p>
+                                    <p class="text-muted mb-0">Irwan dan Imma</p>
                                 </div>
 
                             </div> <!-- end card-body -->

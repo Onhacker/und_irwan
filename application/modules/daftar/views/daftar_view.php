@@ -83,12 +83,6 @@
     </script>
     <audio id="audio" autoplay="true" loop="true" style="width:0px; height:0px;"><source src="https://irwan.onhacker.co.id/assets/und/images/lee.mp3" type="audio/mpeg"></audio>
 
-
- 
-<!-- <audio autoplay loop>
-      <source src="https://irwan.onhacker.co.id/assets/und/images/lee.mp3">
-</audio> -->
-
            
     <!-- Header -->
     <header class="gla_nav_abs">       

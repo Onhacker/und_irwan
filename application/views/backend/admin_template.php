@@ -67,103 +67,27 @@ if ($this->session->userdata("admin_level") == "admin") {
 
     <div class="navbar-custom">
         <div class="container-fluid">
-            <ul class="list-unstyled topnav-menu float-right mb-0">
-                <li class="dropdown notification-list">
-
-                    <a class="navbar-toggle nav-link">
-                        <div class="lines">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                    </a>
-
-                </li>
-
-                   
-                        <li class="dropdown notification-list">
-                            <a class="nav-link dropdown-toggle nav-user mr-0 waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                                <?php if (empty($us->foto)) {?>
-                                    <img src="<?php echo base_url('upload/users/user-1.jpg') ?>" alt="user-image" class="rounded-circle">
-                                <?php } else {?>
-                                    <img src="<?php echo base_url('upload/users/'.$us->foto) ?>" alt="user-image" class="rounded-circle" id="foto_profil">
-                                <?php } ?>
-                               
-                                    <span class="pro-user-name ml-1" id="nama_profil">
-                                        <?php echo ($us->nama_lengkap) ?> <i class="mdi mdi-chevron-down"></i> 
-                                    </span>
-                              
-                                
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
-
-                                <div class="dropdown-header noti-title">
-                                    <h6 class="text-overflow m-0">Welcome !</h6>
-                                </div>
-
-
-                                <a href="<?php echo site_url("admin_profil") ?>" class="dropdown-item notify-item">
-                                    <i class="fe-user"></i>
-                                    <span>Pengaturan Akun</span>
-                                </a>
-                                <?php if ($this->session->userdata("admin_level") != "admin") {?>
-                                  <a href="<?php echo site_url("admin_dashboard/hak_akses") ?>" class="dropdown-item notify-item">
-                                    <i class="fe-toggle-right"></i>
-                                    <span>Hak Akses</span>
-                                </a>
-                                <?php } ?>
-
-
-
-
-
-                                <div class="dropdown-divider"></div>
-
-
-                                <a href="javascript:void(0)" onclick="logout()" class="dropdown-item notify-item">
-                                    <i class="fe-log-out"></i>
-                                    <span>Logout</span>
-                                </a>
-
-                            </div>
-                        </li>
-
-                        <li class="dropdown notification-list">
-                            <a href="javascript:void(0);" class="nav-link right-bar-toggle waves-effect">
-                                <i class="fe-bell noti-icon"></i>
-                            </a>
-                        </li>
-
-                    </ul>
+           
 
 
                     <div class="logo-box">
                         <a  class="logo text-center">
                             <span class="logo-lg">
                                
-                                    <span class="header-title">UND ONLINE ONACKER</span>
-                               
-                                
+                                    <span class="header-title">Onhacker</span>
+                             
 
                             </span>
-                            <span class="logo-sm">
-
-                                <img src="<?php echo base_url('assets/images/').$web->gambar ?>" alt="Logo <?php echo $web->nama_website ?>" alt="" height="40" class="img-fluid avatar-sm rounded">
-                            </span>
+                           
                         </a>
                     </div>
             </div> 
         </div>
 
 
-
+       
 
         </header>
-
-
-
-
-
 
         <div class="wrapper">
             <?php echo $content ?>
