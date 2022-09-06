@@ -71,7 +71,8 @@
             $("#mute").css("display","block");
             $("body").css("overflow","auto");
             $("body").css("height","auto");
-
+            $('#gla_content').show();
+            $('#foot ').show();
             var myAudio = $("#audio")[0];
             if (myAudio.duration > 0 && !myAudio.paused) {
             }
@@ -79,7 +80,7 @@
         }
 
     </script>
-    <audio id="audio" style="width:0px; height:0px;"><source src="https://irwan.onhacker.co.id/assets/und/images/lee.mp3" type="audio/mpeg"></audio>
+    <audio id="audio" autoplay="true" loop="true" style="width:0px; height:0px;"><source src="https://irwan.onhacker.co.id/assets/und/images/lee.mp3" type="audio/mpeg"></audio>
 
 
  
@@ -179,7 +180,7 @@
     
 
     <!-- Content -->
-    <section id="gla_content" class="gla_content">
+    <section id="gla_content" class="gla_content" hidden="">
 
         
        
@@ -361,7 +362,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
 </div>
 <!-- Page End -->
 
-<section class="gla_image_bck gla_section_extra_sml gla_wht_txt" data-color="#282828" style="background-color: rgb(40, 40, 40);">
+<section id="foot" class="gla_image_bck gla_section_extra_sml gla_wht_txt" hidden="" data-color="#282828" style="background-color: rgb(40, 40, 40);">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4">
