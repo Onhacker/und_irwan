@@ -171,7 +171,7 @@
         $('#form_app').form('submit',{
             url: url,
             onSubmit: function(){
-                loader();
+                // loader();
                 return $(this).form('validate');
         },
         dataType:'json',
@@ -188,13 +188,13 @@
                 });
                 return false;
             } else {
-                Swal.fire({
-                    title: obj.title,  
-                    html: obj.pesan,   
-                    type: "success",
-                    allowOutsideClick: false,
-                    confirmButtonClass: "btn btn-confirm mt-2"
-                });
+                // Swal.fire({
+                //     title: obj.title,  
+                //     html: obj.pesan,   
+                //     type: "success",
+                //     allowOutsideClick: false,
+                //     confirmButtonClass: "btn btn-confirm mt-2"
+                // });
 
                 $("#full-width-modal").modal("hide"); 
                 reload_table();
