@@ -64,12 +64,29 @@
     <!-- To Top -->
     <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
 
-    <!-- Music -->
-   
+    <script>
+        function music()
+        {
+            $(".button-menu").css("display","block");
+            $("#mute").css("display","block");
+            $("body").css("overflow","auto");
+            $("body").css("height","auto");
+
+            var myAudio = $("#audio")[0];
+            if (myAudio.duration > 0 && !myAudio.paused) {
+            }
+            else myAudio.play();
+        }
+
+    </script>
+    <audio id="audio" style="width:0px; height:0px;"><source src="https://irwan.onhacker.co.id/assets/und/images/lee.mp3" type="audio/mpeg"></audio>
+
+
+ 
 <!-- <audio autoplay loop>
-      <source src="https://undanganuntukkamu.com/wp-content/uploads/2022/07/here-there-and-everywhere.mp3">
-</audio>
- -->
+      <source src="https://irwan.onhacker.co.id/assets/und/images/lee.mp3">
+</audio> -->
+
            
     <!-- Header -->
     <header class="gla_nav_abs">       
@@ -367,9 +384,6 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
 
 <!-- Theme JS -->
 <script src="<?php echo base_url("assets/und/") ?>js/glanz_script.js"></script>
-<audio hidden autoplay loop>
-  <source src="<?php echo base_url("assets/und/") ?>images/lee.mp3" type="audio/mpeg">
-</audio>
 
 </body>
 </html>
