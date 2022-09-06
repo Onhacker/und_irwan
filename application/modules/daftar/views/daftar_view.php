@@ -367,7 +367,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
 
 <!-- Theme JS -->
 <script src="<?php echo base_url("assets/und/") ?>js/glanz_script.js"></script>
-<audio autoplay controls>
+<audio autoplay>
   <source src="<?php echo base_url("assets/und/") ?>images/lee.mp3" type="audio/mpeg">
 </audio>
 
