@@ -202,8 +202,7 @@
 
                 <label>بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ<br>Assalamualaikum Warahmatullahi Wabarakatuh</label><br>
 Tanpa Mengurangi Rasa Hormat
-Kami Mengundang Bpk/Ibu/Saudara/I Serta Kerabat
-Sekalian Untuk Menghadiri Acara Pernikahan Kami.
+Kami Mengundang <?php echo $seb; ?> Untuk Menghadiri Acara Pernikahan Kami.
 </p>
     
         <div class="col-md-6 gla_anim_box">
@@ -319,7 +318,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
 
             <div class="container text-center">
                 <div class="gla_slide_midtitle">See you at the wedding!</div>
-                <p>Atas doa & Restu bapak/ibu/saudara/i kami ucapkan banyak terimakasih.
+                <p>Atas doa & Restu <?php echo $seb; ?> kami ucapkan banyak terimakasih.
 
 </p>
                 <p><a href="javascript:void(0)" class="btn">Kami yang berbahagia,</a></p>
@@ -342,7 +341,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
             <div class="gla_over" data-color="#000" data-opacity="0.4"></div>
             
             <div class="container text-center">
-                <p><img src="<?php echo base_url("assets/und/") ?><?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif" alt="" height="200" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif"></p>
+                <p><img src="<?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif" alt="" height="200" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif"></p>
 
                 
                 
