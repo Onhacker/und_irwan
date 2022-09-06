@@ -64,6 +64,7 @@
     <!-- To Top -->
     <a href="#gla_page" class="gla_top ti ti-angle-up gla_go"></a>
 
+
     <script>
         function music()
         {
@@ -256,10 +257,10 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
                 
                 <div class="gla_countdown" data-year="2022" data-month="10" data-day="04"></div>
                 
-            </div>
+            <!-- </div> -->
             <!-- container end -->
             <div class="container text-center">
-                <p><img src="images/animations/flower6.gif" data-bottom-top="@src:images/animations/flower6.gif; opacity:1" class="gla_animated_flower skrollable skrollable-after" height="110" alt="" style="opacity: 1;"></p>
+                <p><img src="images/animations/flower6.gif" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/flower6.gif; opacity:1" class="gla_animated_flower skrollable skrollable-after" height="110" alt="" style="opacity: 1;"></p>
                 <h2>Akad Nikah & Resepsi</h2>
                <!--  Siang dan malam berganti begitu cepat, di antara saat-saat mendebarkan yang belum pernah kami rasakan sebelumnya. Kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia.<br> -->
                 <!-- boxes -->
@@ -302,6 +303,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
                 <!-- boxes end -->
                 
             </div>
+        </div>
         </section>
         <!-- section end -->
 
@@ -346,7 +348,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
             <div class="gla_over" data-color="#000" data-opacity="0.4"></div>
             
             <div class="container text-center">
-                <p><img src="<?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif" alt="" height="200" data-bottom-top="@src:images/animations/thnyou_wh.gif"></p>
+                <p><img src="<?php echo base_url("assets/und/") ?><?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif" alt="" height="200" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/thnyou_wh.gif"></p>
 
                 
                 
