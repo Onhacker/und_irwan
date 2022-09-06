@@ -144,7 +144,7 @@
                 <div class="gla_slide_midtitle">Irwan & Imma</div>
                 <label>Dear : </label>
                 
-                <h2><?php echo $uri ?></h2>
+                <h2><?php echo $seb." ".$uri ?></h2>
                 <a href="#gla_content" onClick="music();" class="btn btn-primary  blink">Buka Undangan</a>
                  <!-- <a class="btn btn-primary" href="#gla_content">Lihat Undangan</a> -->
 

@@ -20,6 +20,7 @@ class Daftar extends MX_Controller {
 			$x = $this->db->get("peserta")->row();
 			// echo $this->db->last_query();
 			$data["uri"] = $x->nama;
+			$data["seb"] = $x->gambar;
 			$this->load->view('daftar_view',$data);
 		}
 			      
