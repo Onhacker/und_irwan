@@ -38,7 +38,9 @@
                             <div class="row">
                                
                       
-                            <div class="col-md-12">
+
+
+                             <div class="col-md-12">
                                 <div class="form-group">
                                     <label >Nama Peserta</label>
                                     <input class='form-control' type="text" id="nama_cari" autocomplete="off">
@@ -100,6 +102,11 @@
                 <div class="modal-body">
                     <form id="form_app" method="post"  enctype="multipart/form-data" >
                         <input type="hidden" name="id_peserta" id="id_peserta">
+                         <div class="form-group mb-3">
+                            <label class="text-primary">Sebutan</label>
+                            <input class='form-control' name="gambar" type="text" id="gambar" autocomplete="off">
+                            <small>Contoh : Bapak, Ibu, Saudara, Saudari, Mr dll</small>
+                        </div>
                         <div class="form-group mb-3">
                             <label class="text-primary">Nama</label>
                             <input class='form-control' name="nama" type="text" id="nama" autocomplete="off">

@@ -140,13 +140,12 @@
                 dataType: "JSON",
                 success: function(data) {
                     Swal.close();
-                    $('#id_kecamatan').val(data.id_kecamatan).trigger('change');
-                    $('#id_desa').val(data.id_desa).trigger('change');
+                    
                     $('#id_peserta').val(data.id_peserta);
                     $('#nama').val(data.nama);
                     // $('#id_jabatan').val(data.jabatan);
-                    $('#id_jabatan').val(data.jabatan).trigger('change');
-                    $('#no_hp').val(data.no_hp);
+                    
+                    $('#gambar').val(data.gambar);
                     $('#full-width-modal').modal('show'); 
                     $('.mymodal-title').html('Edit Data <code>'+ data.nama+'</code>'); 
                 },
