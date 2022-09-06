@@ -48,24 +48,8 @@ class Admin_peserta_fix extends Admin_Controller {
             
             $row["jabatan"] = $res->jabatan;
             $row["share"] = "<a target='_BLANK' href='https://api.whatsapp.com/send?text=
-            Assalamualaikum%20Warahmatullahi%20Wabarakatuh%0A%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20%0A%22.%24".$res->nama."%22%0Auntuk%20menghadiri%20acara%20kami%20%3A%20
-
-                  
-
-        Baso Irwan dan Imma
-
-        Berikut link undangan kami, untuk info lengkap dari acara bisa kunjungi :
-        ".site_url("und/".$res->id_peserta."/".$this->buat_name($res->nama)."")."
-
-        Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
-
-        Mohon maaf perihal undangan hanya di bagikan melalui pesan ini.
-
-        Dan karena suasana masih pandemi, diharapkan untuk tetap menggunakan masker dan datang pada jam yang telah ditentukan.
-
-        Terima kasih banyak atas perhatiannya.
-
-        Wassalamualaikum Warahmatullahi Wabarakatuh
+            _Assalamualaikum%20Warahmatullahi%20Wabarakatuh_%0A%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20%0A*".$res->nama."*%0A%0Auntuk%20menghadiri%20pernikahan%20kami%0A*Baso%20Irwan%20dan%20Imma*%0A%0ABerikut%20link%20undangan%20kami%2C%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%20%3A%0A
+        ".site_url("und/".$res->id_peserta."/".$this->buat_name($res->nama)."")."%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu.%0A%0AMohon%20maaf%20perihal%20undangan%20hanya%20di%20bagikan%20melalui%20pesan%20ini.%0ATerima%20kasih%20banyak%20atas%20perhatiannya.%0A%0A_Wassalamualaikum%20Warahmatullahi%20Wabarakatuh_
 ' class='btn btn-info btn-xs waves-effect waves-light'> Detail</a> ";
 
             $row["id_kecamatan"] = $res->id_kecamatan;
