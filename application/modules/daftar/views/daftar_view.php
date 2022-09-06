@@ -250,7 +250,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
             
             
             <div class="container text-center">
-                <p><img src="<?php echo base_url("assets/und/") ?>images/animations/savethedate.gif" data-bottom-top="@src:images/animations/savethedate.gif" height="150" alt=""></p>
+                <p><img src="<?php echo base_url("assets/und/") ?>images/animations/savethedate.gif" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/savethedate.gif" height="150" alt=""></p>
                 <!-- <h3 class="gla_subtitle">Menuju Hari Bahagia</h3> -->
                 <h2>04 Oktober 2022</h2>
                 <h3 class="gla_subtitle">Menuju Hari Bahagia</h3>
@@ -260,7 +260,7 @@ Sekalian Untuk Menghadiri Acara Pernikahan Kami.
             <!-- </div> -->
             <!-- container end -->
             <div class="container text-center">
-                <p><img src="images/animations/flower6.gif" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/flower6.gif; opacity:1" class="gla_animated_flower skrollable skrollable-after" height="110" alt="" style="opacity: 1;"></p>
+                <p><img src="<?php echo base_url("assets/und/") ?>images/animations/flower6.gif" data-bottom-top="@src:<?php echo base_url("assets/und/") ?>images/animations/flower6.gif; opacity:1" class="gla_animated_flower skrollable skrollable-after" height="110" alt="" style="opacity: 1;"></p>
                 <h2>Akad Nikah & Resepsi</h2>
                <!--  Siang dan malam berganti begitu cepat, di antara saat-saat mendebarkan yang belum pernah kami rasakan sebelumnya. Kami nantikan kehadiran para keluarga dan sahabat, untuk menjadi saksi ikrar janji suci kami di hari yang bahagia.<br> -->
                 <!-- boxes -->
