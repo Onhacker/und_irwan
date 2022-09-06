@@ -149,7 +149,8 @@
                 <label>Dear : </label>
                 
                 <h2><?php echo $uri ?></h2>
-                 <a class="btn btn-primary" href="#gla_content">Lihat Undangan</a>
+                <a href="#gla_content" onClick="music();" class="btn btn-primary  blink">Buka Undangan</a>
+                 <!-- <a class="btn btn-primary" href="#gla_content">Lihat Undangan</a> -->
 
                 <!-- <p>Tanpa Mengurangi Rasa Hormat, Kami Mengundang Bpk/Ibu/Saudara/i Untuk Menghaidiri Acara Pernikahan Kami.</p> -->
 
