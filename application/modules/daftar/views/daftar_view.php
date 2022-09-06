@@ -13,12 +13,12 @@
     <meta name=googlebot-news content="noindex" >
     <meta name=googlebot content="noindex" >
     <meta name=robots content="noindex">
-    <meta name=description content="Irwan dan Imma are getting married on Saturday, 04 Oktober 2022. Undangan pernikahan online by onhacker.co.id" >
+    <meta name=description content="Pernikahan Irwan dan Imma Tanggal 04 Oktober 2022. Undangan pernikahan online by onhacker.co.id" >
     <meta name=keywords content="onhacker,undangan,pernikahan,online,website,wedding,invitation">
     <meta property="og:url" content="<?php echo site_url(); ?>" >
     <meta property="og:title" content="Irwan dan Imma" >
     <meta property="og:description" content="Irwan dan Imma are getting married on Saturday, 04 Oktober 2022. Undangan pernikahan online by onhacker.co.id" >
-    <meta property="og:image" content="<?php echo base_url("assets/und/") ?>images/programmer_v_02.jpg" >
+    <meta property="og:image" content="<?php echo base_url("assets/und/") ?>images/hmm.jpg" >
     <meta property="og:image:alt" content="Irwan dan Imma" >
     <title>Undangan Pernikahan Irwan & Imma</title>
 
