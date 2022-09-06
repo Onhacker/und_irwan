@@ -4,7 +4,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Admin_peserta_fix extends Admin_Controller {
     function __construct(){
         parent::__construct();
-        cek_session_akses(get_class($this),$this->session->userdata('admin_session'));
         $this->load->model("M_admin_peserta_fix", "dm");
     }
 
@@ -48,7 +47,7 @@ class Admin_peserta_fix extends Admin_Controller {
             
             $row["jabatan"] = $res->jabatan;
             $row["share"] = "<a target='_BLANK' href='https://api.whatsapp.com/send?text=_Assalamualaikum%20Warahmatullahi%20Wabarakatuh_%0A%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20%0A*".$res->nama."*%0A%0Auntuk%20menghadiri%20pernikahan%20kami%0A*Baso%20Irwan%20dan%20Imma*%0A%0ABerikut%20link%20undangan%20kami%2C%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%20%3A%0A".site_url("und/".$res->id_peserta."/".$this->buat_name($res->nama)."")."%0AMerupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20Bapak%2FIbu%2FSaudara%2Fi%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu.%0A%0AMohon%20maaf%20perihal%20undangan%20hanya%20di%20bagikan%20melalui%20pesan%20ini.%0ATerima%20kasih%20banyak%20atas%20perhatiannya.%0A%0A_Wassalamualaikum%20Warahmatullahi%20Wabarakatuh_
-' class='btn btn-info btn-xs waves-effect waves-light'> Detail</a> ";
+' class='btn btn-info btn-xs waves-effect waves-light'> Share</a> ";
 
             $row["id_kecamatan"] = $res->id_kecamatan;
             if ($res->lunas == "L") {
@@ -128,30 +127,19 @@ class Admin_peserta_fix extends Admin_Controller {
     function update(){
         $data = $this->db->escape_str($this->input->post());
         $this->load->library('form_validation');
-        $this->form_validation->set_rules('id_kecamatan','Kecamatan','required'); 
-        $this->form_validation->set_rules('id_desa','Desa','required'); 
+        // $this->form_validation->set_rules('id_kecamatan','Kecamatan','required'); 
+        // $this->form_validation->set_rules('id_desa','Desa','required'); 
         $this->form_validation->set_rules('nama','Nama','required'); 
-        $this->form_validation->set_rules('id_jabatan','Jabatan','required');  
+        // $this->form_validation->set_rules('id_jabatan','Jabatan','required');  
         $this->form_validation->set_message('required', '* %s Harus diisi ');
         $this->form_validation->set_error_delimiters('<br> ', ' ');
         if($this->form_validation->run() == TRUE ) { 
-            
-            $this->db->where("id_jabatan", $data["id_jabatan"]);
-            $j = $this->db->get("desa_jabatan")->row();
-            $data["jabatan"] = $data["id_jabatan"];
-            unset($data["id_jabatan"]);
-
-            $this->db->where("jabatan", $data["jabatan"]);
-            $t = $this->db->get("desa_jabatan")->row();
-
-            $data["session_temp"] = $t->id_jabatan;
-
             
             $this->db->where("id_peserta",$data["id_peserta"]);
 
             
 
-            $res  = $this->db->update("peserta_fix",$data); 
+            $res  = $this->db->update("peserta",$data); 
             if($res) {    
                 $ret = array("success" => true,
                     "title" => "Berhasil",

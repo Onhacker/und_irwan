@@ -140,14 +140,9 @@ if ($this->session->userdata("admin_level") == "admin") {
                     <div class="logo-box">
                         <a  class="logo text-center">
                             <span class="logo-lg">
-                                <img src="<?php echo base_url('assets/images/').$web->gambar ?>" alt="Logo <?php echo $web->nama_website ?>" alt="" height = "60px" >
-                                <?php if ($this->session->userdata("admin_level") == "user") {
-                                    $this->db->where("id_pkm", $this->session->userdata("admin_pkm"));
-                                    $c = $this->db->get("master_pkm")->row(); ?>
-                                    <span class="header-title"><?php echo strtoupper($web->nama_website) ?></span>
-                                <?php } else { ?>
-                                    <span class="header-title"><?php echo strtoupper($web->nama_website) ?></span>
-                                <?php } ?>
+                               
+                                    <span class="header-title">UND ONLINE ONACKER</span>
+                               
                                 
 
                             </span>
@@ -161,48 +156,6 @@ if ($this->session->userdata("admin_level") == "admin") {
         </div>
 
 
-        <div class="topbar-menu">
-            <div class="container-fluid">
-                <div id="navigation">
-
-                    <ul class="navigation-menu">
-
-                        <li class="has-submenu">
-                            <a href="<?php echo site_url("admin_setting_web") ?>"><i class="fe-settings"></i>Setting </a>
-                        </li>
-                        <li class="has-submenu">
-                            <a href="<?php echo site_url("admin_peserta") ?>"><i class="fe-user"></i>Pendaftaran </a>
-                        </li>
-                        
-                        <?php 
-                        $this->db->where("id","1");
-                        $k = $this->db->get("id_kota")->row();
-                        $this->db->where("id",$k->id_kota);
-                        $kk = $this->db->get("tiger_kota")->row();
-                        ?>
-
-                        <li class="has-submenu">
-                            <a href="<?php echo site_url("admin_peserta_fix") ?>"><i class="fe-user"></i>Peserta <?php echo ucwords(strtolower($kk->kota)) ?> </a>
-                        </li>
-                        <li class="has-submenu">
-                            <a target="_BLANK" href="<?php echo site_url("cek_desa") ?>"><i class="fe-user"></i>Data Desa </a>
-                        </li>
-            </li>
-        </ul>
-    </li>
-
-                    
-                           
-                
-                        </ul>
-
-
-                        <div class="clearfix"></div>
-                    </div>
-
-                </div>
-
-            </div>
 
 
         </header>
