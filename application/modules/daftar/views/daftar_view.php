@@ -19,6 +19,7 @@
     <meta property="og:title" content="Irwan dan Imma" >
     <meta property="og:description" content="Irwan dan Imma are getting married on Saturday, 04 Oktober 2022. Undangan pernikahan online by onhacker.co.id" >
     <meta property="og:image" content="<?php echo base_url("assets/und/") ?>images/hmm.jpg" >
+    <link itemprop="thumbnailUrl" href="<?php echo base_url("assets/und/") ?>images/hmm.jpg"> <span itemprop="thumbnail" itemscope itemtype="http://schema.org/ImageObject"> <link itemprop="url" href="<?php echo base_url("assets/und/") ?>images/hmm.jpg"> </span>
     <meta property="og:image:alt" content="Irwan dan Imma" >
     <title>Undangan Pernikahan Irwan & Imma</title>
 
@@ -80,7 +81,7 @@
             <div class="container">
                 
                 <div class="gla_logo_container clearfix">
-                    <img src="images/glanz_logo_bl.png" alt="">
+                    <img src="<?php echo base_url("assets/und/") ?>images/glanz_logo_bl.png" alt="">
                     <div class="gla_logo_txt">
                         <!-- Logo -->
                         <a href="/" class="gla_logo">Irwan & Imma</a>
