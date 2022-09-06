@@ -48,8 +48,9 @@ class Admin_peserta_fix extends Admin_Controller {
             
             $row["jabatan"] = $res->jabatan;
             $row["share"] = "<a target='_BLANK' href='https://api.whatsapp.com/send?text=
-                    Assalamualaikum Warahmatullahi Wabarakatuh
-                Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i ".$res->nama." untuk menghadiri acara kami : 
+            Assalamualaikum%20Warahmatullahi%20Wabarakatuh%0A%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20Bapak%2FIbu%2FSaudara%2Fi%20%0A%22.%24".$res->nama."%22%0Auntuk%20menghadiri%20acara%20kami%20%3A%20
+
+                  
 
         Baso Irwan dan Imma
 
