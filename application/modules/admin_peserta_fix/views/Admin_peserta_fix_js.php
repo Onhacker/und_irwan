@@ -63,6 +63,7 @@
                 {"data": "id_peserta","orderable": false},
                 {"data": "nama"},
                 {"data": "share"},
+                {"data": "lihat"},
              
                 
                

@@ -288,10 +288,11 @@ Kami Mengundang <?php echo $seb; ?> Untuk Menghadiri Acara Pernikahan Kami.
                             <span class="gla_news_title"><strong>Resepsi</strong></span>
                             <p><b>Selasa, 04 Oktober 2022<br>Pukul 10.00 WITA - Selsai<br></b>Di Jl. Cempaka, Siwa, Kec. Pitumpanua, Kabupaten Wajo, Sulawesi Selatan. Depan Masjid Jamiyatul Khaeriyah<br></p>
                         </a>
+                        
                     </div> 
 
                     
-
+                    
                 </div>
                 <!-- boxes end -->
                  <a href="https://www.google.co.id/maps/place/Baso+Irwan+Sakti/@-3.6989882,120.4182475,19z/data=!3m1!4b1!4m5!3m4!1s0x2d968f5671ad882f:0x51620dec2aafae4a!8m2!3d-3.6989895!4d120.4187947" target="_BLANK" class="btn btn-primary">Lihat Peta</a>

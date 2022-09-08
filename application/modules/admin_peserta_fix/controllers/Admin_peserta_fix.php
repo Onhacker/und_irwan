@@ -47,24 +47,11 @@ class Admin_peserta_fix extends Admin_Controller {
             
             $row["jabatan"] = $res->jabatan;
             $row["share"] = "<a target='_BLANK' href='https://api.whatsapp.com/send?text=_Assalamualaikum%20Warahmatullahi%20Wabarakatuh_%0A%0ATanpa%20mengurangi%20rasa%20hormat%2C%20perkenankan%20kami%20mengundang%20%0A%0A*[%20".$res->gambar."%20".$res->nama."%20]*%0A%0Auntuk%20menghadiri%20pernikahan%20kami%0A%0A*Irwan%20dan%20Imma*%0A%0ABerikut%20link%20undangan%20kami%2C%20untuk%20info%20lengkap%20dari%20acara%20bisa%20kunjungi%20%3A%0A".site_url("und/".$res->id_peserta."/".$this->buat_name($res->nama)."")."%0A%0A*Merupakan%20suatu%20kebahagiaan%20bagi%20kami%20apabila%20".$res->gambar."%20berkenan%20untuk%20hadir%20dan%20memberikan%20doa%20restu.%0A%0AMohon%20maaf%20perihal%20undangan%20hanya%20di%20bagikan%20melalui%20pesan%20ini.%0ATerima%20kasih%20banyak%20atas%20perhatiannya.%0A%0A_Wassalamualaikum%20Warahmatullahi%20Wabarakatuh_
-' class='btn btn-info btn-xs waves-effect waves-light'> Share</a> ";
+' class='btn btn-success btn-xs waves-effect waves-light'> Share WA</a> ";
 
-            $row["id_kecamatan"] = $res->id_kecamatan;
-            if ($res->lunas == "L") {
-                $row["lunas"] = '<span class="badge badge-success">Lunas</span> <a href="'.site_url("upload/gambar/").'/'.$res->gambar.'" target = "_BLANK"> <span class="badge badge-danger">Cek Bukti </span>  </a>';
-                $row["detail"] = "<a target='_BLANK' href=".site_url('publik/validasi/').$res->id_desa." class='btn btn-info btn-xs waves-effect waves-light'> Detail</a>  ";
-            } else {
-                $row["lunas"] = '<span class="badge badge-danger">BB</span>';
-                $row["detail"] = "";
-            }
-            $this->db->where("id", $res->id_desa);
-            $de = $this->db->get("tiger_desa")->row();
-            
-            $this->db->where("id", $res->id_kecamatan);
-            $kec = $this->db->get("tiger_kecamatan")->row();
-
-            $row["nama_desa"] = "<span class ='text-primary'>".$de->desa."</span>";
-            $row["kecamatan"] = "<span class ='text-primary'>".$kec->kecamatan."</span>";
+            $row["lihat"] = "<a target='_BLANK' href='".site_url("und/".$res->id_peserta."/".$this->buat_name($res->nama)."")."' class='btn btn-danger btn-xs waves-effect waves-light'> Lihat</a> ";
+           
+          
             $row['cek'] = '<div class="checkbox checkbox-primary checkbox-single"> <input type="checkbox" class="data-check" value="'.$res->id_peserta.'"><label></label></div>';
 
             $data[] = $row;

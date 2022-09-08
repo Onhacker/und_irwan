@@ -78,6 +78,7 @@
                                 <th width="3%" ><strong>No.</strong>    </th>
                                 <th >Nama</th>
                                 <th >Share</th>
+                                <th >Lihat</th>
                                
                                 
                                
